@@ -1,0 +1,140 @@
+{
+  "name": "P3",
+  "clocks": [
+    "x2"
+  ],
+  "actions": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "locations": [
+    {
+      "name": "L0",
+      "accepting": true,
+      "invariant": {}
+    },
+    {
+      "name": "L1",
+      "accepting": true,
+      "invariant": {}
+    },
+    {
+      "name": "L2",
+      "accepting": true,
+      "invariant": {}
+    }
+  ],
+  "transitions": [
+    {
+      "source": "L0",
+      "action": "a",
+      "guard": {
+        "x2": "[1,1]"
+      },
+      "reset": [
+        "x2"
+      ],
+      "target": "L2"
+    },
+    {
+      "source": "L0",
+      "action": "b",
+      "guard": {
+        "x2": "(2,+)"
+      },
+      "reset": [
+        "x2"
+      ],
+      "target": "L0"
+    },
+    {
+      "source": "L0",
+      "action": "c",
+      "guard": {
+        "x2": "(0,6]"
+      },
+      "reset": [
+        "x2"
+      ],
+      "target": "L1"
+    },
+    {
+      "source": "L0",
+      "action": "d",
+      "guard": {},
+      "reset": [
+        "x2"
+      ],
+      "target": "L0"
+    },
+    {
+      "source": "L1",
+      "action": "a",
+      "guard": {
+        "x2": "(3,7]"
+      },
+      "reset": [
+        "x2"
+      ],
+      "target": "L0"
+    },
+    {
+      "source": "L1",
+      "action": "d",
+      "guard": {
+        "x2": "[6,+)"
+      },
+      "reset": [
+        "x2"
+      ],
+      "target": "L2"
+    },
+    {
+      "source": "L2",
+      "action": "b",
+      "guard": {
+        "x2": "(4,+)"
+      },
+      "reset": [
+        "x2"
+      ],
+      "target": "L2"
+    },
+    {
+      "source": "L2",
+      "action": "b",
+      "guard": {
+        "x2": "[0,4]"
+      },
+      "reset": [
+        "x2"
+      ],
+      "target": "L1"
+    },
+    {
+      "source": "L2",
+      "action": "d",
+      "guard": {
+        "x2": "[0,7]"
+      },
+      "reset": [
+        "x2"
+      ],
+      "target": "L0"
+    },
+    {
+      "source": "L1",
+      "action": "c",
+      "guard": {
+        "x2": "[5,6)"
+      },
+      "reset": [
+        "x2"
+      ],
+      "target": "L1"
+    }
+  ],
+  "init_location": "L0"
+}

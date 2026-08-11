@@ -1,0 +1,8 @@
+generated_action,source_action,kind
+runnable1_start,runnable1_start,preserve
+runnable2_start,runnable2_start,preserve
+write1_first,write1,refine
+write1_second,write1,refine
+read1,read1,preserve
+runnable1_finish,epsilon,hide
+runnable2_finish,epsilon,hide

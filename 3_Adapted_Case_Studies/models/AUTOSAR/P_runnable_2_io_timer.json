@@ -1,0 +1,45 @@
+{
+  "name": "AUTOSAR_Runnable_2_io_Timer",
+  "clocks": [
+    "x_r2_io"
+  ],
+  "actions": [
+    "runnable2_start",
+    "read1"
+  ],
+  "locations": [
+    {
+      "name": "idle",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "armed",
+      "invariant": {},
+      "accepting": true
+    }
+  ],
+  "transitions": [
+    {
+      "source": "idle",
+      "action": "runnable2_start",
+      "guard": {},
+      "reset": [
+        "x_r2_io"
+      ],
+      "target": "armed"
+    },
+    {
+      "source": "armed",
+      "action": "read1",
+      "guard": {
+        "x_r2_io": "[0,4]"
+      },
+      "reset": [
+        "x_r2_io"
+      ],
+      "target": "idle"
+    }
+  ],
+  "init_location": "idle"
+}

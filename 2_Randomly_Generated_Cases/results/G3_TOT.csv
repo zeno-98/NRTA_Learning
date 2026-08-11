@@ -1,0 +1,31 @@
+group,case,algorithm,status,error,timeMs,rq,mq,eq,compMqStage1Success,compMqStage2Success,compMqStage3Success,compUncertainCtx,compRollback,compHypNoSolution,targetComponentCount,targetComponentLocations,targetComponentTransitions,targetTotalLocations,targetTotalTransitions,targetParallelLocations,targetParallelTransitions,targetCompleteComponentCount,targetCompleteComponentLocations,targetCompleteComponentTransitions,targetCompleteTotalLocations,targetCompleteTotalTransitions,targetCompleteParallelLocations,targetCompleteParallelTransitions,learnedComponentCount,learnedComponentLocations,learnedComponentTransitions,learnedTotalLocations,learnedTotalTransitions,learnedParallelLocations,learnedParallelTransitions
+2_TA2_ACT4_LOC3_TRANS0997_U10,case1,mct,OK,,23333,370,468,70,,,,,,,2,2;2,4;4,4,8,4,9,2,3;3,13;12,6,25,9,65,1,5,459,5,459,5,459
+2_TA2_ACT4_LOC3_TRANS0997_U10,case2,mct,TIMEOUT,internal timeout,,123,162,4327,,,,,,,2,2;2,3;4,4,7,4,7,2,3;3,14;13,6,27,9,67,0,,,0,0,0,0
+2_TA2_ACT4_LOC3_TRANS0997_U10,case3,mct,OK,,1090,111,144,24,,,,,,,2,2;2,3;3,4,6,3,6,2,3;3,13;10,6,23,8,53,1,4,105,4,105,4,105
+2_TA2_ACT4_LOC3_TRANS0997_U10,case4,mct,TIMEOUT,internal timeout,,134,180,3688,,,,,,,2,2;2,4;4,4,8,4,9,2,3;3,12;13,6,25,9,58,0,,,0,0,0,0
+2_TA2_ACT4_LOC3_TRANS0997_U10,case5,mct,OK,,1391,128,177,31,,,,,,,2,2;2,5;3,4,8,4,9,2,3;3,17;8,6,25,9,59,1,4,132,4,132,4,132
+2_TA2_ACT4_LOC3_TRANS0997_U10,case6,mct,TIMEOUT,internal timeout,,140,186,2356,,,,,,,2,2;2,6;5,4,11,4,18,2,3;3,18;12,6,30,9,90,0,,,0,0,0,0
+2_TA2_ACT4_LOC3_TRANS0997_U10,case7,mct,TIMEOUT,internal timeout,,83,144,975,,,,,,,2,2;2,3;3,4,6,3,7,2,3;3,13;9,6,22,8,50,0,,,0,0,0,0
+2_TA2_ACT4_LOC3_TRANS0997_U10,case8,mct,OK,,996,104,132,23,,,,,,,2,2;2,4;4,4,8,4,10,2,3;3,16;6,6,22,9,57,1,4,146,4,146,4,146
+2_TA2_ACT4_LOC3_TRANS0997_U10,case9,mct,OK,,172,61,69,6,,,,,,,2,2;2,4;3,4,7,3,3,2,3;3,14;11,6,25,8,48,1,4,29,4,29,4,29
+2_TA2_ACT4_LOC3_TRANS0997_U10,case10,mct,OK,,660,88,108,19,,,,,,,2,2;2,4;4,4,8,4,6,2,3;3,12;18,6,30,9,67,1,4,86,4,86,4,86
+2_TA2_ACT4_LOC3_TRANS0997_U10,case11,mct,OK,,39879,326,462,91,,,,,,,2,2;2,5;3,4,8,4,12,2,3;3,13;10,6,23,9,61,1,5,786,5,786,5,786
+2_TA2_ACT4_LOC3_TRANS0997_U10,case12,mct,TIMEOUT,internal timeout,,8,19,10777,,,,,,,2,2;2,3;3,4,6,4,9,2,3;3,13;9,6,22,9,57,0,,,0,0,0,0
+2_TA2_ACT4_LOC3_TRANS0997_U10,case13,mct,TIMEOUT,internal timeout,,71,120,1348,,,,,,,2,2;2,3;5,4,8,4,12,2,3;3,10;13,6,23,9,64,0,,,0,0,0,0
+2_TA2_ACT4_LOC3_TRANS0997_U10,case14,mct,OK,,509,82,99,17,,,,,,,2,2;2,4;4,4,8,3,5,2,3;3,16;20,6,36,8,88,1,4,68,4,68,4,68
+2_TA2_ACT4_LOC3_TRANS0997_U10,case15,mct,TIMEOUT,internal timeout,,326,408,585,,,,,,,2,2;2,3;3,4,6,4,8,2,3;3,15;11,6,26,9,77,0,,,0,0,0,0
+2_TA2_ACT4_LOC3_TRANS0997_U10,case16,mct,OK,,652,150,176,19,,,,,,,2,2;2,5;3,4,8,4,6,2,3;3,15;12,6,27,9,55,1,5,90,5,90,5,90
+2_TA2_ACT4_LOC3_TRANS0997_U10,case17,mct,TIMEOUT,internal timeout,,321,453,334,,,,,,,2,2;2,4;5,4,9,4,15,2,3;3,10;14,6,24,9,65,0,,,0,0,0,0
+2_TA2_ACT4_LOC3_TRANS0997_U10,case18,mct,OK,,446,84,102,17,,,,,,,2,2;2,4;4,4,8,4,8,2,3;3,8;20,6,28,9,70,1,4,65,4,65,4,65
+2_TA2_ACT4_LOC3_TRANS0997_U10,case19,mct,OK,,1418,123,162,25,,,,,,,2,2;2,3;3,4,6,3,5,2,3;3,12;10,6,22,8,56,1,4,184,4,184,4,184
+2_TA2_ACT4_LOC3_TRANS0997_U10,case20,mct,TIMEOUT,internal timeout,,91,114,6133,,,,,,,2,2;2,4;3,4,7,3,7,2,3;3,11;9,6,20,8,44,0,,,0,0,0,0
+2_TA2_ACT4_LOC3_TRANS0997_U10,case21,mct,TIMEOUT,internal timeout,,8,14,75869,,,,,,,2,2;2,3;3,4,6,4,9,2,3;3,12;14,6,26,9,73,0,,,0,0,0,0
+2_TA2_ACT4_LOC3_TRANS0997_U10,case22,mct,OK,,214779,440,633,133,,,,,,,2,2;2,4;4,4,8,4,12,2,3;3,14;8,6,22,9,57,1,5,1063,5,1063,5,1063
+2_TA2_ACT4_LOC3_TRANS0997_U10,case23,mct,TIMEOUT,internal timeout,,48,72,3990,,,,,,,2,2;2,4;3,4,7,4,11,2,3;3,14;12,6,26,9,73,0,,,0,0,0,0
+2_TA2_ACT4_LOC3_TRANS0997_U10,case24,mct,TIMEOUT,internal timeout,,55,86,2285,,,,,,,2,2;2,4;4,4,8,4,12,2,3;3,16;11,6,27,9,80,0,,,0,0,0,0
+2_TA2_ACT4_LOC3_TRANS0997_U10,case25,mct,OK,,186471,502,726,145,,,,,,,2,2;2,4;3,4,7,4,11,2,3;3,14;9,6,23,9,61,1,5,1243,5,1243,5,1243
+2_TA2_ACT4_LOC3_TRANS0997_U10,case26,mct,OK,,75639,528,680,97,,,,,,,2,2;2,4;3,4,7,4,11,2,3;3,12;8,6,20,9,51,1,5,863,5,863,5,863
+2_TA2_ACT4_LOC3_TRANS0997_U10,case27,mct,TIMEOUT,internal timeout,,8,16,47613,,,,,,,2,2;2,3;4,4,7,4,10,2,3;3,7;14,6,21,9,55,0,,,0,0,0,0
+2_TA2_ACT4_LOC3_TRANS0997_U10,case28,mct,OK,,29643,398,504,85,,,,,,,2,2;2,3;4,4,7,4,7,2,3;3,14;15,6,29,9,75,1,5,561,5,561,5,561
+2_TA2_ACT4_LOC3_TRANS0997_U10,case29,mct,OK,,87,8,11,3,,,,,,,2,2;2,4;4,4,8,1,1,2,3;3,12;16,6,28,6,38,1,2,19,2,19,2,19
+2_TA2_ACT4_LOC3_TRANS0997_U10,case30,mct,OK,,3468,143,192,37,,,,,,,2,2;2,4;4,4,8,3,8,2,3;3,14;13,6,27,8,54,1,4,203,4,203,4,203

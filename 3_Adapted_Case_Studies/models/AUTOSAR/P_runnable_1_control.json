@@ -1,0 +1,82 @@
+{
+  "name": "AUTOSAR_Runnable_1_Control",
+  "clocks": [
+    "x_r1_control"
+  ],
+  "actions": [
+    "runnable1_start",
+    "write1_first",
+    "write1_second",
+    "runnable1_finish"
+  ],
+  "locations": [
+    {
+      "name": "passive",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "before_write",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "after_first",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "after_second",
+      "invariant": {},
+      "accepting": true
+    }
+  ],
+  "transitions": [
+    {
+      "source": "passive",
+      "action": "runnable1_start",
+      "guard": {},
+      "reset": [
+        "x_r1_control"
+      ],
+      "target": "before_write"
+    },
+    {
+      "source": "before_write",
+      "action": "write1_first",
+      "guard": {},
+      "reset": [
+        "x_r1_control"
+      ],
+      "target": "after_first"
+    },
+    {
+      "source": "after_first",
+      "action": "write1_second",
+      "guard": {},
+      "reset": [
+        "x_r1_control"
+      ],
+      "target": "after_second"
+    },
+    {
+      "source": "after_first",
+      "action": "runnable1_finish",
+      "guard": {},
+      "reset": [
+        "x_r1_control"
+      ],
+      "target": "passive"
+    },
+    {
+      "source": "after_second",
+      "action": "runnable1_finish",
+      "guard": {},
+      "reset": [
+        "x_r1_control"
+      ],
+      "target": "passive"
+    }
+  ],
+  "init_location": "passive"
+}

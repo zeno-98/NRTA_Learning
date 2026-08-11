@@ -1,0 +1,250 @@
+{
+  "name": "IC_Final_Test_Product_A",
+  "clocks": [
+    "x_A"
+  ],
+  "actions": [
+    "allocate_test_A",
+    "finish_test_A",
+    "allocate_burn_A",
+    "finish_burn_A",
+    "complete_cycle"
+  ],
+  "locations": [
+    {
+      "name": "A0",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "A_test_1",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "A_test_1234",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "A_test_234",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "A_test_done",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "A_burn_6",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "A_burn_67",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "A_burn_7",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "A_done",
+      "invariant": {},
+      "accepting": true
+    }
+  ],
+  "transitions": [
+    {
+      "source": "A0",
+      "action": "allocate_test_A",
+      "guard": {
+        "x_A": "(0,1)"
+      },
+      "reset": [
+        "x_A"
+      ],
+      "target": "A_test_1"
+    },
+    {
+      "source": "A0",
+      "action": "allocate_test_A",
+      "guard": {
+        "x_A": "[1,1]"
+      },
+      "reset": [
+        "x_A"
+      ],
+      "target": "A_test_1234"
+    },
+    {
+      "source": "A0",
+      "action": "allocate_test_A",
+      "guard": {
+        "x_A": "(1,2]"
+      },
+      "reset": [
+        "x_A"
+      ],
+      "target": "A_test_234"
+    },
+    {
+      "source": "A_test_1",
+      "action": "finish_test_A",
+      "guard": {
+        "x_A": "[15,15]"
+      },
+      "reset": [
+        "x_A"
+      ],
+      "target": "A_test_done"
+    },
+    {
+      "source": "A_test_1234",
+      "action": "finish_test_A",
+      "guard": {
+        "x_A": "[9,9]"
+      },
+      "reset": [
+        "x_A"
+      ],
+      "target": "A_test_done"
+    },
+    {
+      "source": "A_test_1234",
+      "action": "finish_test_A",
+      "guard": {
+        "x_A": "[12,12]"
+      },
+      "reset": [
+        "x_A"
+      ],
+      "target": "A_test_done"
+    },
+    {
+      "source": "A_test_1234",
+      "action": "finish_test_A",
+      "guard": {
+        "x_A": "[15,15]"
+      },
+      "reset": [
+        "x_A"
+      ],
+      "target": "A_test_done"
+    },
+    {
+      "source": "A_test_234",
+      "action": "finish_test_A",
+      "guard": {
+        "x_A": "[9,9]"
+      },
+      "reset": [
+        "x_A"
+      ],
+      "target": "A_test_done"
+    },
+    {
+      "source": "A_test_234",
+      "action": "finish_test_A",
+      "guard": {
+        "x_A": "[12,12]"
+      },
+      "reset": [
+        "x_A"
+      ],
+      "target": "A_test_done"
+    },
+    {
+      "source": "A_test_234",
+      "action": "finish_test_A",
+      "guard": {
+        "x_A": "[15,15]"
+      },
+      "reset": [
+        "x_A"
+      ],
+      "target": "A_test_done"
+    },
+    {
+      "source": "A_test_done",
+      "action": "allocate_burn_A",
+      "guard": {
+        "x_A": "(0,1)"
+      },
+      "reset": [
+        "x_A"
+      ],
+      "target": "A_burn_6"
+    },
+    {
+      "source": "A_test_done",
+      "action": "allocate_burn_A",
+      "guard": {
+        "x_A": "[1,1]"
+      },
+      "reset": [
+        "x_A"
+      ],
+      "target": "A_burn_67"
+    },
+    {
+      "source": "A_test_done",
+      "action": "allocate_burn_A",
+      "guard": {
+        "x_A": "(1,2]"
+      },
+      "reset": [
+        "x_A"
+      ],
+      "target": "A_burn_7"
+    },
+    {
+      "source": "A_burn_6",
+      "action": "finish_burn_A",
+      "guard": {
+        "x_A": "[10,10]"
+      },
+      "reset": [
+        "x_A"
+      ],
+      "target": "A_done"
+    },
+    {
+      "source": "A_burn_67",
+      "action": "finish_burn_A",
+      "guard": {
+        "x_A": "[10,10]"
+      },
+      "reset": [
+        "x_A"
+      ],
+      "target": "A_done"
+    },
+    {
+      "source": "A_burn_7",
+      "action": "finish_burn_A",
+      "guard": {
+        "x_A": "[10,10]"
+      },
+      "reset": [
+        "x_A"
+      ],
+      "target": "A_done"
+    },
+    {
+      "source": "A_done",
+      "action": "complete_cycle",
+      "guard": {
+        "x_A": "[0,1]"
+      },
+      "reset": [
+        "x_A"
+      ],
+      "target": "A0"
+    }
+  ],
+  "init_location": "A0"
+}

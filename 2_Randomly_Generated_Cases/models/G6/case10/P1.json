@@ -1,0 +1,54 @@
+{
+  "name": "P1",
+  "clocks": [
+    "x0"
+  ],
+  "actions": [
+    "a",
+    "b"
+  ],
+  "locations": [
+    {
+      "name": "L0",
+      "accepting": true,
+      "invariant": {}
+    },
+    {
+      "name": "L1",
+      "accepting": true,
+      "invariant": {}
+    }
+  ],
+  "transitions": [
+    {
+      "source": "L0",
+      "action": "a",
+      "guard": {},
+      "reset": [
+        "x0"
+      ],
+      "target": "L1"
+    },
+    {
+      "source": "L0",
+      "action": "b",
+      "guard": {},
+      "reset": [
+        "x0"
+      ],
+      "target": "L0"
+    },
+    {
+      "source": "L1",
+      "action": "a",
+      "guard": {
+        "x0": "[10,18]"
+      },
+      "reset": [
+        "x0"
+      ],
+      "target": "L1"
+    }
+  ],
+  "init_location": "L0"
+}

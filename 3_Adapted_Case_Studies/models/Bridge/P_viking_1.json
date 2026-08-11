@@ -1,0 +1,75 @@
+{
+  "name": "Bridge_Viking_1",
+  "clocks": [
+    "x1"
+  ],
+  "actions": [
+    "take_1",
+    "release_1"
+  ],
+  "locations": [
+    {
+      "name": "left",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "to_right",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "right",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "to_left",
+      "invariant": {},
+      "accepting": true
+    }
+  ],
+  "transitions": [
+    {
+      "source": "left",
+      "action": "take_1",
+      "guard": {},
+      "reset": [
+        "x1"
+      ],
+      "target": "to_right"
+    },
+    {
+      "source": "to_right",
+      "action": "release_1",
+      "guard": {
+        "x1": "[1,+)"
+      },
+      "reset": [
+        "x1"
+      ],
+      "target": "right"
+    },
+    {
+      "source": "right",
+      "action": "take_1",
+      "guard": {},
+      "reset": [
+        "x1"
+      ],
+      "target": "to_left"
+    },
+    {
+      "source": "to_left",
+      "action": "release_1",
+      "guard": {
+        "x1": "[1,+)"
+      },
+      "reset": [
+        "x1"
+      ],
+      "target": "left"
+    }
+  ],
+  "init_location": "left"
+}

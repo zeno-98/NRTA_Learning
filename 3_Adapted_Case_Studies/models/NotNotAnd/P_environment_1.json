@@ -1,0 +1,35 @@
+{
+  "name": "NotNotAnd_Environment1",
+  "clocks": [
+    "x_env1"
+  ],
+  "actions": [
+    "i1_down"
+  ],
+  "locations": [
+    {
+      "name": "EnvI11",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "EnvI10",
+      "invariant": {},
+      "accepting": true
+    }
+  ],
+  "transitions": [
+    {
+      "source": "EnvI11",
+      "action": "i1_down",
+      "guard": {
+        "x_env1": "[1,1]"
+      },
+      "reset": [
+        "x_env1"
+      ],
+      "target": "EnvI10"
+    }
+  ],
+  "init_location": "EnvI11"
+}

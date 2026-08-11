@@ -1,0 +1,87 @@
+{
+  "name": "Fischer_Process_1",
+  "clocks": [
+    "x1"
+  ],
+  "actions": [
+    "request_1",
+    "set_1",
+    "restart_1",
+    "enter_1",
+    "exit_1"
+  ],
+  "locations": [
+    {
+      "name": "idle",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "write",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "wait",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "critical",
+      "invariant": {},
+      "accepting": true
+    }
+  ],
+  "transitions": [
+    {
+      "source": "idle",
+      "action": "request_1",
+      "guard": {},
+      "reset": [
+        "x1"
+      ],
+      "target": "write"
+    },
+    {
+      "source": "write",
+      "action": "set_1",
+      "guard": {
+        "x1": "[0,2]"
+      },
+      "reset": [
+        "x1"
+      ],
+      "target": "wait"
+    },
+    {
+      "source": "wait",
+      "action": "restart_1",
+      "guard": {},
+      "reset": [
+        "x1"
+      ],
+      "target": "write"
+    },
+    {
+      "source": "wait",
+      "action": "enter_1",
+      "guard": {
+        "x1": "(2,+)"
+      },
+      "reset": [
+        "x1"
+      ],
+      "target": "critical"
+    },
+    {
+      "source": "critical",
+      "action": "exit_1",
+      "guard": {},
+      "reset": [
+        "x1"
+      ],
+      "target": "idle"
+    }
+  ],
+  "init_location": "idle"
+}

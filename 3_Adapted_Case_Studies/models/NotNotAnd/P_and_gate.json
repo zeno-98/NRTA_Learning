@@ -1,0 +1,263 @@
+{
+  "name": "NotNotAnd_AND",
+  "clocks": [
+    "x_and"
+  ],
+  "actions": [
+    "n1_up",
+    "n1_down",
+    "n2_up",
+    "n2_down",
+    "q_up",
+    "q_down"
+  ],
+  "locations": [
+    {
+      "name": "And000",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "And001",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "And010",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "And011",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "And100",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "And101",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "And110",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "And111",
+      "invariant": {},
+      "accepting": true
+    }
+  ],
+  "transitions": [
+    {
+      "source": "And000",
+      "action": "n1_up",
+      "guard": {},
+      "reset": [
+        "x_and"
+      ],
+      "target": "And100"
+    },
+    {
+      "source": "And000",
+      "action": "n2_up",
+      "guard": {},
+      "reset": [
+        "x_and"
+      ],
+      "target": "And010"
+    },
+    {
+      "source": "And001",
+      "action": "n1_up",
+      "guard": {
+        "x_and": "[0,1]"
+      },
+      "reset": [
+        "x_and"
+      ],
+      "target": "And101"
+    },
+    {
+      "source": "And001",
+      "action": "n2_up",
+      "guard": {
+        "x_and": "[0,1]"
+      },
+      "reset": [
+        "x_and"
+      ],
+      "target": "And011"
+    },
+    {
+      "source": "And001",
+      "action": "q_down",
+      "guard": {
+        "x_and": "[0,1]"
+      },
+      "reset": [
+        "x_and"
+      ],
+      "target": "And000"
+    },
+    {
+      "source": "And010",
+      "action": "n1_up",
+      "guard": {},
+      "reset": [
+        "x_and"
+      ],
+      "target": "And110"
+    },
+    {
+      "source": "And010",
+      "action": "n2_down",
+      "guard": {},
+      "reset": [
+        "x_and"
+      ],
+      "target": "And000"
+    },
+    {
+      "source": "And011",
+      "action": "n1_up",
+      "guard": {
+        "x_and": "[0,1]"
+      },
+      "reset": [
+        "x_and"
+      ],
+      "target": "And111"
+    },
+    {
+      "source": "And011",
+      "action": "n2_down",
+      "guard": {
+        "x_and": "[0,1]"
+      },
+      "reset": [
+        "x_and"
+      ],
+      "target": "And001"
+    },
+    {
+      "source": "And011",
+      "action": "q_down",
+      "guard": {
+        "x_and": "[0,1]"
+      },
+      "reset": [
+        "x_and"
+      ],
+      "target": "And010"
+    },
+    {
+      "source": "And100",
+      "action": "n1_down",
+      "guard": {},
+      "reset": [
+        "x_and"
+      ],
+      "target": "And000"
+    },
+    {
+      "source": "And100",
+      "action": "n2_up",
+      "guard": {},
+      "reset": [
+        "x_and"
+      ],
+      "target": "And110"
+    },
+    {
+      "source": "And101",
+      "action": "n1_down",
+      "guard": {
+        "x_and": "[0,1]"
+      },
+      "reset": [
+        "x_and"
+      ],
+      "target": "And001"
+    },
+    {
+      "source": "And101",
+      "action": "n2_up",
+      "guard": {
+        "x_and": "[0,1]"
+      },
+      "reset": [
+        "x_and"
+      ],
+      "target": "And111"
+    },
+    {
+      "source": "And101",
+      "action": "q_down",
+      "guard": {
+        "x_and": "[0,1]"
+      },
+      "reset": [
+        "x_and"
+      ],
+      "target": "And100"
+    },
+    {
+      "source": "And110",
+      "action": "n1_down",
+      "guard": {
+        "x_and": "[0,1]"
+      },
+      "reset": [
+        "x_and"
+      ],
+      "target": "And010"
+    },
+    {
+      "source": "And110",
+      "action": "n2_down",
+      "guard": {
+        "x_and": "[0,1]"
+      },
+      "reset": [
+        "x_and"
+      ],
+      "target": "And100"
+    },
+    {
+      "source": "And110",
+      "action": "q_up",
+      "guard": {
+        "x_and": "[0,1]"
+      },
+      "reset": [
+        "x_and"
+      ],
+      "target": "And111"
+    },
+    {
+      "source": "And111",
+      "action": "n1_down",
+      "guard": {},
+      "reset": [
+        "x_and"
+      ],
+      "target": "And011"
+    },
+    {
+      "source": "And111",
+      "action": "n2_down",
+      "guard": {},
+      "reset": [
+        "x_and"
+      ],
+      "target": "And101"
+    }
+  ],
+  "init_location": "And010"
+}

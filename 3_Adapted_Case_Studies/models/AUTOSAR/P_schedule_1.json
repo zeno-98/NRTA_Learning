@@ -1,0 +1,101 @@
+{
+  "name": "AUTOSAR_Schedule_1",
+  "clocks": [
+    "x_schedule1"
+  ],
+  "actions": [
+    "runnable1_start",
+    "runnable2_start"
+  ],
+  "locations": [
+    {
+      "name": "s1",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "s2",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "s3",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "s4",
+      "invariant": {},
+      "accepting": true
+    }
+  ],
+  "transitions": [
+    {
+      "source": "s1",
+      "action": "runnable1_start",
+      "guard": {
+        "x_schedule1": "[1,1]"
+      },
+      "reset": [
+        "x_schedule1"
+      ],
+      "target": "s2"
+    },
+    {
+      "source": "s2",
+      "action": "runnable1_start",
+      "guard": {
+        "x_schedule1": "[2,2]"
+      },
+      "reset": [
+        "x_schedule1"
+      ],
+      "target": "s3"
+    },
+    {
+      "source": "s3",
+      "action": "runnable1_start",
+      "guard": {
+        "x_schedule1": "[3,3]"
+      },
+      "reset": [
+        "x_schedule1"
+      ],
+      "target": "s4"
+    },
+    {
+      "source": "s2",
+      "action": "runnable2_start",
+      "guard": {
+        "x_schedule1": "[10,10]"
+      },
+      "reset": [
+        "x_schedule1"
+      ],
+      "target": "s1"
+    },
+    {
+      "source": "s3",
+      "action": "runnable2_start",
+      "guard": {
+        "x_schedule1": "[10,10]"
+      },
+      "reset": [
+        "x_schedule1"
+      ],
+      "target": "s1"
+    },
+    {
+      "source": "s4",
+      "action": "runnable2_start",
+      "guard": {
+        "x_schedule1": "[10,10]"
+      },
+      "reset": [
+        "x_schedule1"
+      ],
+      "target": "s1"
+    }
+  ],
+  "init_location": "s1"
+}

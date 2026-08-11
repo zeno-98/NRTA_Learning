@@ -1,0 +1,4 @@
+variant,cases,ok,timeout,fail,ok_timeMs_sum,ok_timeMs_median,ok_mq_sum,ok_mq_median,ok_rq_sum,ok_rq_median,ok_eq_sum,ok_eq_median
+mct,6,1,5,0,65538,65538,3796,3796,3707,3707,50,50
+ttt,6,2,4,0,298629,149314,4221,2110,863,431,120,60
+comp,6,6,0,0,874617,70005,18748,3066,0,0,198,29

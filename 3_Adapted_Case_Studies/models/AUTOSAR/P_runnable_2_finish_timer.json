@@ -1,0 +1,45 @@
+{
+  "name": "AUTOSAR_Runnable_2_finish_Timer",
+  "clocks": [
+    "x_r2_finish"
+  ],
+  "actions": [
+    "runnable2_start",
+    "runnable2_finish"
+  ],
+  "locations": [
+    {
+      "name": "idle",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "armed",
+      "invariant": {},
+      "accepting": true
+    }
+  ],
+  "transitions": [
+    {
+      "source": "idle",
+      "action": "runnable2_start",
+      "guard": {},
+      "reset": [
+        "x_r2_finish"
+      ],
+      "target": "armed"
+    },
+    {
+      "source": "armed",
+      "action": "runnable2_finish",
+      "guard": {
+        "x_r2_finish": "[2,4]"
+      },
+      "reset": [
+        "x_r2_finish"
+      ],
+      "target": "idle"
+    }
+  ],
+  "init_location": "idle"
+}

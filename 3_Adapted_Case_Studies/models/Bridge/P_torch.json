@@ -1,0 +1,277 @@
+{
+  "name": "Bridge_Torch",
+  "clocks": [
+    "x_torch"
+  ],
+  "actions": [
+    "take_1",
+    "release_1",
+    "take_2",
+    "release_2",
+    "take_3",
+    "release_3"
+  ],
+  "locations": [
+    {
+      "name": "left_0",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "left_1",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "left_2",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "right_0",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "right_1",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "right_2",
+      "invariant": {},
+      "accepting": true
+    }
+  ],
+  "transitions": [
+    {
+      "source": "left_0",
+      "action": "take_1",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "left_1"
+    },
+    {
+      "source": "left_1",
+      "action": "take_1",
+      "guard": {
+        "x_torch": "[0,0]"
+      },
+      "reset": [
+        "x_torch"
+      ],
+      "target": "left_2"
+    },
+    {
+      "source": "left_1",
+      "action": "release_1",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "right_0"
+    },
+    {
+      "source": "left_2",
+      "action": "release_1",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "left_1"
+    },
+    {
+      "source": "left_0",
+      "action": "take_2",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "left_1"
+    },
+    {
+      "source": "left_1",
+      "action": "take_2",
+      "guard": {
+        "x_torch": "[0,0]"
+      },
+      "reset": [
+        "x_torch"
+      ],
+      "target": "left_2"
+    },
+    {
+      "source": "left_1",
+      "action": "release_2",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "right_0"
+    },
+    {
+      "source": "left_2",
+      "action": "release_2",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "left_1"
+    },
+    {
+      "source": "left_0",
+      "action": "take_3",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "left_1"
+    },
+    {
+      "source": "left_1",
+      "action": "take_3",
+      "guard": {
+        "x_torch": "[0,0]"
+      },
+      "reset": [
+        "x_torch"
+      ],
+      "target": "left_2"
+    },
+    {
+      "source": "left_1",
+      "action": "release_3",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "right_0"
+    },
+    {
+      "source": "left_2",
+      "action": "release_3",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "left_1"
+    },
+    {
+      "source": "right_0",
+      "action": "take_1",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "right_1"
+    },
+    {
+      "source": "right_1",
+      "action": "take_1",
+      "guard": {
+        "x_torch": "[0,0]"
+      },
+      "reset": [
+        "x_torch"
+      ],
+      "target": "right_2"
+    },
+    {
+      "source": "right_1",
+      "action": "release_1",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "left_0"
+    },
+    {
+      "source": "right_2",
+      "action": "release_1",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "right_1"
+    },
+    {
+      "source": "right_0",
+      "action": "take_2",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "right_1"
+    },
+    {
+      "source": "right_1",
+      "action": "take_2",
+      "guard": {
+        "x_torch": "[0,0]"
+      },
+      "reset": [
+        "x_torch"
+      ],
+      "target": "right_2"
+    },
+    {
+      "source": "right_1",
+      "action": "release_2",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "left_0"
+    },
+    {
+      "source": "right_2",
+      "action": "release_2",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "right_1"
+    },
+    {
+      "source": "right_0",
+      "action": "take_3",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "right_1"
+    },
+    {
+      "source": "right_1",
+      "action": "take_3",
+      "guard": {
+        "x_torch": "[0,0]"
+      },
+      "reset": [
+        "x_torch"
+      ],
+      "target": "right_2"
+    },
+    {
+      "source": "right_1",
+      "action": "release_3",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "left_0"
+    },
+    {
+      "source": "right_2",
+      "action": "release_3",
+      "guard": {},
+      "reset": [
+        "x_torch"
+      ],
+      "target": "right_1"
+    }
+  ],
+  "init_location": "left_0"
+}

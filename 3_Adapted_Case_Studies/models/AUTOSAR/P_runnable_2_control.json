@@ -1,0 +1,58 @@
+{
+  "name": "AUTOSAR_Runnable_2_Control",
+  "clocks": [
+    "x_r2_control"
+  ],
+  "actions": [
+    "runnable2_start",
+    "read1",
+    "runnable2_finish"
+  ],
+  "locations": [
+    {
+      "name": "passive",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "before_read",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "after_read",
+      "invariant": {},
+      "accepting": true
+    }
+  ],
+  "transitions": [
+    {
+      "source": "passive",
+      "action": "runnable2_start",
+      "guard": {},
+      "reset": [
+        "x_r2_control"
+      ],
+      "target": "before_read"
+    },
+    {
+      "source": "before_read",
+      "action": "read1",
+      "guard": {},
+      "reset": [
+        "x_r2_control"
+      ],
+      "target": "after_read"
+    },
+    {
+      "source": "after_read",
+      "action": "runnable2_finish",
+      "guard": {},
+      "reset": [
+        "x_r2_control"
+      ],
+      "target": "passive"
+    }
+  ],
+  "init_location": "passive"
+}

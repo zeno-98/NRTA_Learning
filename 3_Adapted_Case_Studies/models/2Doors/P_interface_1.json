@@ -1,0 +1,100 @@
+{
+  "name": "TwoDoors_Interface_1",
+  "clocks": [
+    "x_if1"
+  ],
+  "actions": [
+    "push_1",
+    "closed_1",
+    "closed_2",
+    "phase_1"
+  ],
+  "locations": [
+    {
+      "name": "safe",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "opening",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "open",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "closing",
+      "invariant": {},
+      "accepting": true
+    }
+  ],
+  "transitions": [
+    {
+      "source": "safe",
+      "action": "push_1",
+      "guard": {},
+      "reset": [
+        "x_if1"
+      ],
+      "target": "safe"
+    },
+    {
+      "source": "safe",
+      "action": "closed_1",
+      "guard": {},
+      "reset": [
+        "x_if1"
+      ],
+      "target": "safe"
+    },
+    {
+      "source": "safe",
+      "action": "closed_2",
+      "guard": {},
+      "reset": [
+        "x_if1"
+      ],
+      "target": "opening"
+    },
+    {
+      "source": "safe",
+      "action": "phase_1",
+      "guard": {},
+      "reset": [
+        "x_if1"
+      ],
+      "target": "safe"
+    },
+    {
+      "source": "opening",
+      "action": "phase_1",
+      "guard": {},
+      "reset": [
+        "x_if1"
+      ],
+      "target": "open"
+    },
+    {
+      "source": "open",
+      "action": "phase_1",
+      "guard": {},
+      "reset": [
+        "x_if1"
+      ],
+      "target": "closing"
+    },
+    {
+      "source": "closing",
+      "action": "phase_1",
+      "guard": {},
+      "reset": [
+        "x_if1"
+      ],
+      "target": "safe"
+    }
+  ],
+  "init_location": "safe"
+}

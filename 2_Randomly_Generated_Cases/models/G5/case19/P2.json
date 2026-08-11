@@ -1,0 +1,134 @@
+{
+  "name": "P2",
+  "clocks": [
+    "x1"
+  ],
+  "actions": [
+    "a"
+  ],
+  "locations": [
+    {
+      "name": "L0",
+      "accepting": true,
+      "invariant": {}
+    },
+    {
+      "name": "L1",
+      "accepting": true,
+      "invariant": {}
+    }
+  ],
+  "transitions": [
+    {
+      "source": "L0",
+      "action": "a",
+      "guard": {
+        "x1": "[0,4]"
+      },
+      "reset": [
+        "x1"
+      ],
+      "target": "L1"
+    },
+    {
+      "source": "L0",
+      "action": "a",
+      "guard": {
+        "x1": "[5,6]"
+      },
+      "reset": [
+        "x1"
+      ],
+      "target": "L0"
+    },
+    {
+      "source": "L0",
+      "action": "a",
+      "guard": {
+        "x1": "[7,7]"
+      },
+      "reset": [
+        "x1"
+      ],
+      "target": "L1"
+    },
+    {
+      "source": "L0",
+      "action": "a",
+      "guard": {
+        "x1": "[8,8]"
+      },
+      "reset": [
+        "x1"
+      ],
+      "target": "L0"
+    },
+    {
+      "source": "L0",
+      "action": "a",
+      "guard": {
+        "x1": "[9,+)"
+      },
+      "reset": [
+        "x1"
+      ],
+      "target": "L1"
+    },
+    {
+      "source": "L1",
+      "action": "a",
+      "guard": {
+        "x1": "[0,1]"
+      },
+      "reset": [
+        "x1"
+      ],
+      "target": "L0"
+    },
+    {
+      "source": "L1",
+      "action": "a",
+      "guard": {
+        "x1": "[2,3]"
+      },
+      "reset": [
+        "x1"
+      ],
+      "target": "L1"
+    },
+    {
+      "source": "L1",
+      "action": "a",
+      "guard": {
+        "x1": "[4,4]"
+      },
+      "reset": [
+        "x1"
+      ],
+      "target": "L1"
+    },
+    {
+      "source": "L1",
+      "action": "a",
+      "guard": {
+        "x1": "[5,6]"
+      },
+      "reset": [
+        "x1"
+      ],
+      "target": "L1"
+    },
+    {
+      "source": "L1",
+      "action": "a",
+      "guard": {
+        "x1": "[7,10]"
+      },
+      "reset": [
+        "x1"
+      ],
+      "target": "L1"
+    }
+  ],
+  "init_location": "L0"
+}

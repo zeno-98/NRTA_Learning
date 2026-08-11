@@ -1,0 +1,164 @@
+{
+  "name": "Fischer_Shared_ID",
+  "clocks": [
+    "x_id"
+  ],
+  "actions": [
+    "request_1",
+    "set_1",
+    "restart_1",
+    "enter_1",
+    "exit_1",
+    "request_2",
+    "set_2",
+    "restart_2",
+    "enter_2",
+    "exit_2"
+  ],
+  "locations": [
+    {
+      "name": "id_0",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "id_1",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "id_2",
+      "invariant": {},
+      "accepting": true
+    }
+  ],
+  "transitions": [
+    {
+      "source": "id_0",
+      "action": "set_1",
+      "guard": {},
+      "reset": [
+        "x_id"
+      ],
+      "target": "id_1"
+    },
+    {
+      "source": "id_0",
+      "action": "set_2",
+      "guard": {},
+      "reset": [
+        "x_id"
+      ],
+      "target": "id_2"
+    },
+    {
+      "source": "id_1",
+      "action": "set_1",
+      "guard": {},
+      "reset": [
+        "x_id"
+      ],
+      "target": "id_1"
+    },
+    {
+      "source": "id_1",
+      "action": "set_2",
+      "guard": {},
+      "reset": [
+        "x_id"
+      ],
+      "target": "id_2"
+    },
+    {
+      "source": "id_2",
+      "action": "set_1",
+      "guard": {},
+      "reset": [
+        "x_id"
+      ],
+      "target": "id_1"
+    },
+    {
+      "source": "id_2",
+      "action": "set_2",
+      "guard": {},
+      "reset": [
+        "x_id"
+      ],
+      "target": "id_2"
+    },
+    {
+      "source": "id_0",
+      "action": "request_1",
+      "guard": {},
+      "reset": [
+        "x_id"
+      ],
+      "target": "id_0"
+    },
+    {
+      "source": "id_0",
+      "action": "restart_1",
+      "guard": {},
+      "reset": [
+        "x_id"
+      ],
+      "target": "id_0"
+    },
+    {
+      "source": "id_1",
+      "action": "enter_1",
+      "guard": {},
+      "reset": [
+        "x_id"
+      ],
+      "target": "id_1"
+    },
+    {
+      "source": "id_1",
+      "action": "exit_1",
+      "guard": {},
+      "reset": [
+        "x_id"
+      ],
+      "target": "id_0"
+    },
+    {
+      "source": "id_0",
+      "action": "request_2",
+      "guard": {},
+      "reset": [
+        "x_id"
+      ],
+      "target": "id_0"
+    },
+    {
+      "source": "id_0",
+      "action": "restart_2",
+      "guard": {},
+      "reset": [
+        "x_id"
+      ],
+      "target": "id_0"
+    },
+    {
+      "source": "id_2",
+      "action": "enter_2",
+      "guard": {},
+      "reset": [
+        "x_id"
+      ],
+      "target": "id_2"
+    },
+    {
+      "source": "id_2",
+      "action": "exit_2",
+      "guard": {},
+      "reset": [
+        "x_id"
+      ],
+      "target": "id_0"
+    }
+  ],
+  "init_location": "id_0"
+}

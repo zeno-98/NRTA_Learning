@@ -1,0 +1,228 @@
+{
+  "name": "IC_Final_Test_Product_B",
+  "clocks": [
+    "x_B"
+  ],
+  "actions": [
+    "allocate_test_B",
+    "finish_test_B",
+    "allocate_burn_B",
+    "finish_burn_B",
+    "complete_cycle"
+  ],
+  "locations": [
+    {
+      "name": "B0",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "B_test_1",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "B_test_123",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "B_test_23",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "B_test_done",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "B_burn_5",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "B_burn_56",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "B_burn_6",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "B_done",
+      "invariant": {},
+      "accepting": true
+    }
+  ],
+  "transitions": [
+    {
+      "source": "B0",
+      "action": "allocate_test_B",
+      "guard": {
+        "x_B": "(0,1)"
+      },
+      "reset": [
+        "x_B"
+      ],
+      "target": "B_test_1"
+    },
+    {
+      "source": "B0",
+      "action": "allocate_test_B",
+      "guard": {
+        "x_B": "[1,1]"
+      },
+      "reset": [
+        "x_B"
+      ],
+      "target": "B_test_123"
+    },
+    {
+      "source": "B0",
+      "action": "allocate_test_B",
+      "guard": {
+        "x_B": "(1,2]"
+      },
+      "reset": [
+        "x_B"
+      ],
+      "target": "B_test_23"
+    },
+    {
+      "source": "B_test_1",
+      "action": "finish_test_B",
+      "guard": {
+        "x_B": "[8,8]"
+      },
+      "reset": [
+        "x_B"
+      ],
+      "target": "B_test_done"
+    },
+    {
+      "source": "B_test_123",
+      "action": "finish_test_B",
+      "guard": {
+        "x_B": "[4,4]"
+      },
+      "reset": [
+        "x_B"
+      ],
+      "target": "B_test_done"
+    },
+    {
+      "source": "B_test_123",
+      "action": "finish_test_B",
+      "guard": {
+        "x_B": "[8,8]"
+      },
+      "reset": [
+        "x_B"
+      ],
+      "target": "B_test_done"
+    },
+    {
+      "source": "B_test_23",
+      "action": "finish_test_B",
+      "guard": {
+        "x_B": "[4,4]"
+      },
+      "reset": [
+        "x_B"
+      ],
+      "target": "B_test_done"
+    },
+    {
+      "source": "B_test_23",
+      "action": "finish_test_B",
+      "guard": {
+        "x_B": "[8,8]"
+      },
+      "reset": [
+        "x_B"
+      ],
+      "target": "B_test_done"
+    },
+    {
+      "source": "B_test_done",
+      "action": "allocate_burn_B",
+      "guard": {
+        "x_B": "(0,1)"
+      },
+      "reset": [
+        "x_B"
+      ],
+      "target": "B_burn_5"
+    },
+    {
+      "source": "B_test_done",
+      "action": "allocate_burn_B",
+      "guard": {
+        "x_B": "[1,1]"
+      },
+      "reset": [
+        "x_B"
+      ],
+      "target": "B_burn_56"
+    },
+    {
+      "source": "B_test_done",
+      "action": "allocate_burn_B",
+      "guard": {
+        "x_B": "(1,2]"
+      },
+      "reset": [
+        "x_B"
+      ],
+      "target": "B_burn_6"
+    },
+    {
+      "source": "B_burn_5",
+      "action": "finish_burn_B",
+      "guard": {
+        "x_B": "[10,10]"
+      },
+      "reset": [
+        "x_B"
+      ],
+      "target": "B_done"
+    },
+    {
+      "source": "B_burn_56",
+      "action": "finish_burn_B",
+      "guard": {
+        "x_B": "[10,10]"
+      },
+      "reset": [
+        "x_B"
+      ],
+      "target": "B_done"
+    },
+    {
+      "source": "B_burn_6",
+      "action": "finish_burn_B",
+      "guard": {
+        "x_B": "[10,10]"
+      },
+      "reset": [
+        "x_B"
+      ],
+      "target": "B_done"
+    },
+    {
+      "source": "B_done",
+      "action": "complete_cycle",
+      "guard": {
+        "x_B": "[0,1]"
+      },
+      "reset": [
+        "x_B"
+      ],
+      "target": "B0"
+    }
+  ],
+  "init_location": "B0"
+}

@@ -1,0 +1,78 @@
+{
+  "name": "NotNotAnd_NOT2",
+  "clocks": [
+    "x_not2"
+  ],
+  "actions": [
+    "i2_up",
+    "n2_up",
+    "n2_down"
+  ],
+  "locations": [
+    {
+      "name": "Not200",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "Not201",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "Not210",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "Not211",
+      "invariant": {},
+      "accepting": true
+    }
+  ],
+  "transitions": [
+    {
+      "source": "Not200",
+      "action": "i2_up",
+      "guard": {
+        "x_not2": "[0,2]"
+      },
+      "reset": [
+        "x_not2"
+      ],
+      "target": "Not210"
+    },
+    {
+      "source": "Not200",
+      "action": "n2_up",
+      "guard": {
+        "x_not2": "[2,2]"
+      },
+      "reset": [
+        "x_not2"
+      ],
+      "target": "Not201"
+    },
+    {
+      "source": "Not201",
+      "action": "i2_up",
+      "guard": {},
+      "reset": [
+        "x_not2"
+      ],
+      "target": "Not211"
+    },
+    {
+      "source": "Not211",
+      "action": "n2_down",
+      "guard": {
+        "x_not2": "[2,2]"
+      },
+      "reset": [
+        "x_not2"
+      ],
+      "target": "Not210"
+    }
+  ],
+  "init_location": "Not201"
+}

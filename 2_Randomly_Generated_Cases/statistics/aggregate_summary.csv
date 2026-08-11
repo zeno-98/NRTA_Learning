@@ -1,0 +1,4 @@
+variant,method,cases,ok,timeout,fail,ok_rate,pen_avg_s,avg_all_solved_s,all_solved_cases
+mct,TOT,240,89,151,0,0.371,196.013,19.880,85
+ttt,TCT,240,175,65,0,0.729,96.422,4.374,85
+comp,CL,240,213,27,0,0.887,54.423,6.905,85

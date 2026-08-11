@@ -1,0 +1,11 @@
+Bridge and torch
+
+Source:
+The bridge.xml demonstration model distributed with UPPAAL.
+
+Adaptation:
+The packaged benchmark is the three-participant instance with crossing times
+5, 10, and 20 minutes represented uniformly as 1, 2, and 4 five-minute units.
+The torch component records its side and holder count; participant identity is
+already carried by the synchronized participant locations. Indexed take and
+release actions make each handshake explicit.

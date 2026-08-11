@@ -1,0 +1,213 @@
+{
+  "name": "AUTOSAR_Buffer_1",
+  "clocks": [
+    "x_buffer1"
+  ],
+  "actions": [
+    "write1_first",
+    "write1_second",
+    "read1"
+  ],
+  "locations": [
+    {
+      "name": "count_m1",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "count_0",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "count_1",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "count_2",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "count_3",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "count_4",
+      "invariant": {},
+      "accepting": true
+    },
+    {
+      "name": "count_5",
+      "invariant": {},
+      "accepting": true
+    }
+  ],
+  "transitions": [
+    {
+      "source": "count_0",
+      "action": "write1_first",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_1"
+    },
+    {
+      "source": "count_0",
+      "action": "write1_second",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_1"
+    },
+    {
+      "source": "count_1",
+      "action": "write1_first",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_2"
+    },
+    {
+      "source": "count_1",
+      "action": "write1_second",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_2"
+    },
+    {
+      "source": "count_2",
+      "action": "write1_first",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_3"
+    },
+    {
+      "source": "count_2",
+      "action": "write1_second",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_3"
+    },
+    {
+      "source": "count_3",
+      "action": "write1_first",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_4"
+    },
+    {
+      "source": "count_3",
+      "action": "write1_second",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_4"
+    },
+    {
+      "source": "count_4",
+      "action": "write1_first",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_5"
+    },
+    {
+      "source": "count_4",
+      "action": "write1_second",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_5"
+    },
+    {
+      "source": "count_0",
+      "action": "read1",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_m1"
+    },
+    {
+      "source": "count_1",
+      "action": "read1",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_0"
+    },
+    {
+      "source": "count_2",
+      "action": "read1",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_1"
+    },
+    {
+      "source": "count_3",
+      "action": "read1",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_2"
+    },
+    {
+      "source": "count_4",
+      "action": "read1",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_3"
+    },
+    {
+      "source": "count_5",
+      "action": "read1",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_4"
+    },
+    {
+      "source": "count_m1",
+      "action": "write1_first",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_0"
+    },
+    {
+      "source": "count_m1",
+      "action": "write1_second",
+      "guard": {},
+      "reset": [
+        "x_buffer1"
+      ],
+      "target": "count_0"
+    }
+  ],
+  "init_location": "count_0"
+}
