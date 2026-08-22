@@ -8,9 +8,7 @@ import run.zone.SimplifiedDBM;
 import run.zone.SimplifiedIntDBM;
 import run.zone.Zone;
 import ta.Clock;
-import verify.StateHistory.ConvexHullApproxStateHistory;
 import verify.StateHistory.ExactStateHistory;
-import verify.StateHistory.NeuralNetworkStateHistory;
 import verify.StateHistory.StateHistory;
 
 import java.util.ArrayList;
@@ -31,14 +29,6 @@ public final class TeacherSetting {
     public static boolean VERIFY_CANONICAL_TABLE_SOLVE = true;
     public static double VERIFY_SIMPLIFIED_DBM_SPARSE_THRESHOLD = 0.25;
     public static String VERIFY_WORD_TA_NAME = "rlw";
-
-    public enum StateHistoryType {
-        EXACT_DBM,
-        NEURAL_NETWORK,
-        CONVEX_HULL_APPROX
-    }
-
-    public static StateHistoryType VERIFY_STATE_HISTORY_TYPE = StateHistoryType.EXACT_DBM;
 
     public enum ZoneImplementationType {
         EXACT_DBM,
@@ -105,11 +95,7 @@ public final class TeacherSetting {
     }
 
     public static StateHistory<ZoneState> createStateHistory() {
-        return switch (VERIFY_STATE_HISTORY_TYPE) {
-            case EXACT_DBM -> new ExactStateHistory();
-            case NEURAL_NETWORK -> new NeuralNetworkStateHistory();
-            case CONVEX_HULL_APPROX -> new ConvexHullApproxStateHistory();
-        };
+        return new ExactStateHistory();
     }
 
     public static Zone createZone() {

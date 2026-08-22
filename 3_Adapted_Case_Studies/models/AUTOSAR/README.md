@@ -1,13 +1,16 @@
-AUTOSAR
+# AUTOSAR
 
-Source:
+## Source
+
 AUTOSAR-1 in H. Chen et al., "Learning Assumptions for Compositional
 Verification of Timed Automata," CAV 2023, LNCS 13964, pp. 40-61.
 DOI: 10.1007/978-3-031-37706-8_3.
 
-Adaptation:
+## Adaptation
+
 The benchmark uses the first independent runnable-buffer-scheduler pipeline.
 The buffer update structure is retained with capacity 5. Runnable timing is
 represented by one-clock control and checkpoint components, and bookkeeping
-actions are listed in ACTION_PROJECTION.csv. Locations are prefix accepting
-and transitions reset the local clock as required by the input format.
+actions are listed in `ACTION_PROJECTION.csv`. Every executable prefix is
+retained under the paper's executability semantics, and transitions reset the
+local clock as required by the NRTA input format.

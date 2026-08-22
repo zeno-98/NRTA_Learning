@@ -1,7 +1,7 @@
 group,case,algorithm,status,error,timeMs,rq,mq,eq,compMqStage1Success,compMqStage2Success,compMqStage3Success,compUncertainCtx,compRollback,compHypNoSolution,targetComponentCount,targetComponentLocations,targetComponentTransitions,targetTotalLocations,targetTotalTransitions,targetParallelLocations,targetParallelTransitions,targetCompleteComponentCount,targetCompleteComponentLocations,targetCompleteComponentTransitions,targetCompleteTotalLocations,targetCompleteTotalTransitions,targetCompleteParallelLocations,targetCompleteParallelTransitions,learnedComponentCount,learnedComponentLocations,learnedComponentTransitions,learnedTotalLocations,learnedTotalTransitions,learnedParallelLocations,learnedParallelTransitions,averageKi
-2_SourceDerivedRealCases,case0,ttt,TIMEOUT,internal timeout,,80,285,17,,,,,,,9,7;4;2;2;2;3;2;2;4,18;5;2;2;3;3;2;2;6,28,43,-1,-1,9,8;5;3;3;3;4;3;3;5,24;20;8;7;7;12;8;7;22,37,115,-1,-1,0,,,0,0,0,0,3.33
-2_SourceDerivedRealCases,case1,ttt,OK,,4488,478,2064,46,,,,,,,3,4;4;3,5;5;14,11,24,28,40,3,5;5;4,27;27;40,14,94,76,818,1,21,499,21,499,21,499,1.33
-2_SourceDerivedRealCases,case3,ttt,TIMEOUT,internal timeout,,400,188172,84,,,,,,,2,9;9,17;15,18,32,81,271,2,10;10,79;75,20,154,100,1441,0,,,0,0,0,0,12.50
-2_SourceDerivedRealCases,case4,ttt,TIMEOUT,internal timeout,,280,10661,47,,,,,,,4,6;6;4;4,6;6;7;7,20,26,27,48,4,7;7;5;5,30;30;20;20,24,100,253,2058,0,,,0,0,0,0,4.00
-2_SourceDerivedRealCases,case7,ttt,TIMEOUT,internal timeout,,253,1113,42,,,,,,,4,6;4;4;4,24;4;4;4,18,36,112,288,4,7;5;5;5,48;12;12;12,22,84,603,4746,0,,,0,0,0,0,1.75
-2_SourceDerivedRealCases,case8,ttt,OK,,294141,385,2157,74,,,,,,,5,8;2;2;4;4,20;1;1;4;4,20,30,12,17,5,9;3;3;4;4,66;5;5;13;14,23,103,273,2914,1,13,7417,13,7417,13,7417,1.40
+AdaptedCaseStudies,case0,ttt,TIMEOUT,internal timeout,,80,285,17,,,,,,,9,7;4;2;2;2;3;2;2;4,18;5;2;2;3;3;2;2;6,28,43,-1,-1,9,8;5;3;3;3;4;3;3;5,24;20;8;7;7;12;8;7;22,37,115,-1,-1,0,,,0,0,0,0,3.33
+AdaptedCaseStudies,case1,ttt,OK,,4488,478,2064,46,,,,,,,3,4;4;3,5;5;14,11,24,28,40,3,5;5;4,27;27;40,14,94,76,818,1,21,499,21,499,21,499,1.33
+AdaptedCaseStudies,case3,ttt,TIMEOUT,internal timeout,,400,188172,84,,,,,,,2,9;9,17;15,18,32,81,271,2,10;10,79;75,20,154,100,1441,0,,,0,0,0,0,12.50
+AdaptedCaseStudies,case4,ttt,TIMEOUT,internal timeout,,280,10661,47,,,,,,,4,6;6;4;4,6;6;7;7,20,26,27,48,4,7;7;5;5,30;30;20;20,24,100,253,2058,0,,,0,0,0,0,4.00
+AdaptedCaseStudies,case7,ttt,TIMEOUT,internal timeout,,253,1113,42,,,,,,,4,6;4;4;4,24;4;4;4,18,36,112,288,4,7;5;5;5,48;12;12;12,22,84,603,4746,0,,,0,0,0,0,1.75
+AdaptedCaseStudies,case8,ttt,OK,,294141,385,2157,74,,,,,,,5,8;2;2;4;4,20;1;1;4;4,20,30,12,17,5,9;3;3;4;4,66;5;5;13;14,23,103,273,2914,1,13,7417,13,7417,13,7417,1.40

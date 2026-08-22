@@ -1,7 +1,6 @@
 package learning.learners.composition_table.P;
 
 import language.actions.RTARegionAction;
-import language.words.LogicalTimedWord;
 import language.words.RTARegionWord;
 import lombok.Getter;
 import ta.*;
@@ -49,14 +48,6 @@ public class PTree {
         this.addWordList(P);
     }
 
-    // Compatibility placeholder for legacy callers.
-    public void add_P(LogicalTimedWord logicalP) {
-    }
-
-    // Compatibility placeholder for legacy callers.
-    public void add_P(LogicalTimedWord logicalP, Map<Clock, Value> Kmap) {
-    }
-
     public PTreeNode build_branch(RTARegionWord timedWord, int startIndex){
         PTreeNode head = new PTreeNode(timedWord.getTimedAction(startIndex));
         PTreeNode last = head;
@@ -85,11 +76,6 @@ public class PTree {
             current = next;
         }
         return true;
-    }
-
-    // Compatibility placeholder for old call chain.
-    public LogicalTimedWord findLogicalWord(LogicalTimedWord logicalTimedWord) {
-        return null;
     }
 
     public RTA getPassiveLearnedRTA(String name, Clock clock) {
