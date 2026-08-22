@@ -15,3 +15,7 @@ of Timed Synchronous Systems**.
 - [**4_Technical_Supplement.pdf**](4_Technical_Supplement.pdf) provides the
   proofs, additional evaluation, implementation notes, and complete
   illustrative learning example referenced by the paper.
+
+> **PDF viewing note:** The in-browser preview on anonymous.4open.science may
+> render the PDF incompletely, for example by omitting figures or tables. If
+> this occurs, download the PDF and view it locally.
