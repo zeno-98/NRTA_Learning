@@ -1,8 +1,11 @@
-# Artifact for Submission
+# NRTA Learning Artifact
 
-This repository contains the implementation, evaluation materials, and
-technical supplement accompanying the paper **Compositional Automata Learning
-of Timed Synchronous Systems**.
+This repository contains the implementation, benchmark instances, raw
+experimental data, and reproduction instructions accompanying the paper
+**Compositional Automata Learning of Timed Synchronous Systems**.
+The combined author manuscript includes proofs, additional experimental
+analyses, implementation notes, and an illustrative learning example in its
+appendices.
 
 ## Repository Contents
 
@@ -12,10 +15,9 @@ of Timed Synchronous Systems**.
   randomly generated benchmark models, raw results, and summary statistics.
 - [**3_Adapted_Case_Studies**](3_Adapted_Case_Studies/) contains the adapted
   models, source and conversion notes, raw results, and summary statistics.
-- [**4_Technical_Supplement.pdf**](4_Technical_Supplement.pdf) provides the
-  proofs, additional evaluation, implementation notes, and complete
-  illustrative learning example referenced by the paper.
+- [**4_Technical_Supplement.pdf**](4_Technical_Supplement.pdf) is retained as a
+  standalone companion document containing proofs, additional evaluation,
+  implementation notes, and the complete illustrative learning example.
 
-> **PDF viewing note:** The in-browser preview on anonymous.4open.science may
-> render the PDF incompletely, for example by omitting figures or tables. If
-> this occurs, download the PDF and view it locally.
+> **PDF viewing note:** If the in-browser preview renders the PDF incompletely,
+> download the PDF and view it locally.
