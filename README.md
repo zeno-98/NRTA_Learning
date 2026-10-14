@@ -18,6 +18,3 @@ appendices.
 - [**4_Technical_Supplement.pdf**](4_Technical_Supplement.pdf) is retained as a
   standalone companion document containing proofs, additional evaluation,
   implementation notes, and the complete illustrative learning example.
-
-> **PDF viewing note:** If the in-browser preview renders the PDF incompletely,
-> download the PDF and view it locally.
