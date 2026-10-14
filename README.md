@@ -1,4 +1,4 @@
-# Artifact for Submission 39
+# Artifact for Submission
 
 This repository contains the implementation, evaluation materials, and
 technical supplement accompanying the paper **Compositional Automata Learning
