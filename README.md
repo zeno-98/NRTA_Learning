@@ -3,9 +3,6 @@
 This repository contains the implementation, benchmark instances, raw
 experimental data, and reproduction instructions accompanying the paper
 **Compositional Automata Learning of Timed Synchronous Systems**.
-The combined author manuscript includes proofs, additional experimental
-analyses, implementation notes, and an illustrative learning example in its
-appendices.
 
 ## Repository Contents
 
@@ -15,6 +12,5 @@ appendices.
   randomly generated benchmark models, raw results, and summary statistics.
 - [**3_Adapted_Case_Studies**](3_Adapted_Case_Studies/) contains the adapted
   models, source and conversion notes, raw results, and summary statistics.
-- [**4_Technical_Supplement.pdf**](4_Technical_Supplement.pdf) is retained as a
-  standalone companion document containing proofs, additional evaluation,
-  implementation notes, and the complete illustrative learning example.
+- [**4_Technical_Supplement.pdf**](4_Technical_Supplement.pdf) contains supplementary
+  material now included in the paper's appendices and is retained for convenience.
